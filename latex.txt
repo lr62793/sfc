@@ -1,0 +1,29 @@
+backslash round bracket
+$$  $$
+In physics, the mass-energy equivalence is stated 
+by the equation \(E=mc^2\), discovered in 1905 by Albert Einstein.
+$$ * $$
+
+dollar sign
+$$  $$
+In physics, the mass-energy equivalence is stated 
+by the equation $E=mc^2$, discovered in 1905 by Albert Einstein.
+$$ * $$
+
+begin end math
+$$  $$
+In physics, the mass-energy equivalence is stated 
+by the equation \begin{math}E=mc^2\end{math}, discovered in 1905 by Albert Einstein.
+$$ * $$
+
+The mass-energy equivalence is described by the famous equation
+\begin{displaymath}E=mc^2\end{displaymath}
+which means:
+\[mc^2=E\]
+
+discovered in 1905 by Albert Einstein. 
+In natural units ($c$ = 1), the formula expresses the identity
+
+\begin{equation}
+E=m
+\end{equation}
