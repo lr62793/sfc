@@ -1,0 +1,60 @@
+Normal paragraph.
+
+ Literal paragraph.
+
+[.lead]
+Lead paragraph
+
+##Mark## my words, #automation is essential#.
+
+[.line-through]#Where# did all the [.underline]#cores# go?
+
+A [.myrole]#custom role# must be fulfilled by the ``std::vector```.
+
+^super^script
+
+~sub~script
+
+"`double curved quotes`"
+
+'`single curved quotes`'
+
+https://asciidoctor.org - automatic!
+
+https://chat.asciidoc.org[Discuss AsciiDoc^]
+
+= Document Title (Level 0)
+
+== Level 1 Section Title
+
+=== Level 2 Section Title
+
+==== Level 3 Section Title
+
+===== Level 4 Section Title
+
+====== Level 5 Section Title
+
+== Another Level 1 Section Title
+
+* List item
+** Nested list item
+*** Deeper nested list item
+* List item
+ ** Another nested list item
+
+|===
+|Shortcut |Purpose
+
+|kbd:[F11]
+|Toggle fullscreen
+
+|===
+
+_The Pragmatic Programmer_ <<pp>> should be required reading for all developers.
+To learn all about design patterns, refer to the book by the "`Gang of Four`" <<gof>>.
+
+[bibliography]
+== References
+
+* [[[pp]]] Andy Hunt
