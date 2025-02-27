@@ -1,0 +1,432 @@
+<html lang="en"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Template</title>
+    <style type="text/css">
+body {
+          background-color: #f9f9f9;
+          color: rgb(29, 28, 28);
+        }
+
+        h1 {
+          letter-spacing: 0.2px;
+          font-size: 65px;
+          padding: 30px 0;
+          border-radius: 4px;
+        }
+
+        h2 {
+          letter-spacing: 0.2px;
+          font-size: 40px;
+          padding: 26px 0;
+          border-radius: 4px;
+        }
+
+        h3 {
+          letter-spacing: 0.2px;
+          font-size: 30px;
+          padding: 20px 0;
+          border-radius: 4px;
+        }
+
+        h4 {
+          letter-spacing: 0.18px;
+          font-size: 23px;
+          padding: 15px 0;
+          border-radius: 4px;
+        }
+
+        p {
+          letter-spacing: 0.18px;
+          font-size: 19px;
+          padding: 5px 0;
+          text-align: justify;
+        }
+
+        header {
+          height: 50px;
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 0;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: stretch;
+          background-color: white;
+
+          #logo {
+            background: url("../images/logo.png") no-repeat center center/cover;
+            width: 100px;
+            margin-left: 10vw;
+            cursor: pointer;
+
+            a {
+              height: 100%;
+              width: 100%;
+            }
+          }
+
+          ul {
+            width: 400px;
+            max-width: 60%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-right: 10vw;
+            align-content: center;
+            font-size: 19px;
+            text-transform: uppercase;
+          }
+        }
+
+        footer {
+          height: 50px;
+          padding: 0 10%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: white;
+
+          p {
+            font-size: 15px;
+            text-align: center;
+            font-style: italic;
+            font-weight: 700;
+            color: rgba(0, 0, 0, 0.4);
+          }
+        }
+
+        .main-container {
+          width: 85vw;
+          margin: auto;
+          padding-top: 10px;
+
+          .about-company,
+          .about-services {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: stretch;
+            margin-bottom: 30px;
+
+            h2 {
+              padding: 0;
+            }
+
+            .text,
+            .image {
+              width: 47%;
+              min-width: 300px;
+              min-height: 300px;
+            }
+          }
+
+          .about-company {
+            .image {
+              background-color: #ffa089;
+              color: #ffa089;
+              border-radius: 4px;
+            }
+          }
+
+          .about-services {
+            .image {
+              background-color: #a2add0;
+              color: #a2add0;
+              border-radius: 4px;
+            }
+          }
+
+          .steps {
+            margin: 45px 0;
+            text-align: center;
+
+            .container {
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+
+              .wrapper {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                padding: 0 30px;
+
+                .number {
+                  font-family: fantasy;
+                  color: #ffa089;
+                  font-size: 150px;
+                }
+
+                p {
+                  width: 250px;
+                  padding: 15px;
+                }
+              }
+            }
+          }
+
+          .pricing {
+            margin-bottom: 70px;
+
+            h2 {
+              background-color: #a2add0;
+              text-align: center;
+              padding: 10px 0;
+            }
+
+            .table {
+              margin-top: 10px;
+              border-collapse: collapse;
+              border-spacing: 0;
+              width: 100%;
+
+              thead {
+                th {
+                  text-transform: uppercase;
+                  padding: 15px 0;
+                  font-size: 20px;
+                }
+              }
+
+              tbody {
+                display: table-row-group;
+                vertical-align: middle;
+                border-color: inherit;
+
+                tr {
+                  td {
+                    padding: 15px 10px;
+                    font-size: 17px;
+                    text-align: center;
+                  }
+                  td:first-child {
+                    text-align: left;
+                  }
+                }
+
+                tr:nth-child(odd) {
+                  background: #f2f2f2;
+                }
+              }
+            }
+          }
+        }
+
+        @media screen and (max-width: 900px) {
+          .main-container {
+            .about-company {
+              flex-flow: column-reverse wrap;
+              text-align: center;
+
+              .text,
+              .image {
+                width: 100%;
+                margin-bottom: 20px;
+              }
+            }
+            .about-services {
+              flex-flow: column wrap;
+              text-align: center;
+              margin-bottom: 0px;
+
+              .text,
+              .image {
+                width: 100%;
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          header {
+            #logo {
+              width: 15%;
+            }
+            ul {
+              text-transform: capitalize;
+            }
+          }
+          .main-container {
+            .steps {
+              margin-top: 0;
+
+              .container {
+                .wrapper {
+                  padding: 0;
+                  padding-bottom: 10px;
+                  width: 100%;
+
+                  .number {
+                    font-size: 90px;
+                  }
+                  p {
+                    max-width: 60%;
+                    padding: 0;
+                    padding-left: 5%;
+                  }
+                }
+              }
+            }
+            .pricing {
+              .table {
+                thead {
+                  th {
+                    font-size: 15px;
+                  }
+                }
+                tbody {
+                  tr {
+                    td {
+                      padding: 10px 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }</style>
+  </head>
+  <body>
+    <main class="main-container" id="beginning">
+      <section class="about-company">
+        <div class="image">#image</div>
+        <div class="text">
+          <h2>Our company</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+            earum, nemo eveniet magni ex enim deserunt quod dolor maiores animi
+            provident est libero mollitia debitis? Nihil molestias odit incidunt
+            at.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+            earum, nemo eveniet magni ex enim deserunt quod dolor maiores animi
+            provident est libero mollitia debitis? Nihil molestias odit incidunt
+            at. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Molestias earum, nemo eveniet magni ex enim deserunt quod dolor
+            maiores animi provident est libero mollitia debitis? Nihil molestias
+            odit incidunt at.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </section>
+      <section class="about-services">
+        <div class="text">
+          <h2>Our services</h2>
+          <p>
+            Molestias earum, nemo eveniet magni ex enim deserunt quod dolor
+            maiores animi provident est libero mollitia debitis?
+          </p>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+            earum, nemo eveniet magni ex enim deserunt quod dolor maiores animi
+            provident est libero mollitia debitis? Nihil molestias odit incidunt
+            at.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+            earum, nemo eveniet magni ex enim deserunt quod dolor maiores animi
+            provident est libero mollitia debitis? Nihil molestias odit incidunt
+            at.
+          </p>
+        </div>
+        <div class="image">#image</div>
+      </section>
+      <section class="steps">
+        <h2>How to start?</h2>
+        <div class="container">
+          <div class="wrapper">
+            <span class="number">01</span>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="wrapper">
+            <span class="number">02</span>
+            <p>
+              Molestias earum, nemo eveniet magni ex enim deserunt quod dolor
+              maiores animi provident est libero mollitia debitis.
+            </p>
+          </div>
+          <div class="wrapper">
+            <span class="number">03</span>
+            <p>
+              Nihil molestias odit incidunt at. Molestias earum, nemo eveniet
+              magni.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="pricing">
+        <h2>Pricing</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Basic</th>
+              <th>Standard</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monthly price</td>
+              <td>$90</td>
+              <td>$270</td>
+              <td>$500</td>
+            </tr>
+            <tr>
+              <td>Feature №1</td>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <td>Feature №2</td>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <td>Guarantee</td>
+              <td>1</td>
+              <td>2</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Service №1</td>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <td>Service №2</td>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <td>Service №3</td>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>© Copyright 2020 Company Name. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
