@@ -42,19 +42,3 @@ https://chat.asciidoc.org[Discuss AsciiDoc^]
 *** Deeper nested list item
 * List item
  ** Another nested list item
-
-|===
-|Shortcut |Purpose
-
-|kbd:[F11]
-|Toggle fullscreen
-
-|===
-
-_The Pragmatic Programmer_ <<pp>> should be required reading for all developers.
-To learn all about design patterns, refer to the book by the "`Gang of Four`" <<gof>>.
-
-[bibliography]
-== References
-
-* [[[pp]]] Andy Hunt
