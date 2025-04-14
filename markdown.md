@@ -6,8 +6,6 @@ paragraph text
 **bold text**
 _italicized text_
 
-I need to highlight these ==very important words==.
-
 > blockquote
 
 1. First item
