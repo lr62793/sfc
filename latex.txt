@@ -1,11 +1,19 @@
-\documentclass{article}
-\begin{document}
+The mass-energy equivalence is described by the famous equation
 
-We write integrals using $\int$ and fractions using $\frac{a}{b}$. Limits are placed on integrals using superscripts and subscripts:
+\begin{equation} \label{einstein-eq}
+E=mc^2
+\end{equation}
 
-\[ \int_0^1 \frac{dx}{e^x} =  \frac{e-1}{e} \]
+Equation $\ref{einstein-eq}$ discovered in 1905 by Albert Einstein.
+In natural units ($c$ = 1), the formula expresses the identity
 
-Lower case Greek letters are written as $\omega$ $\delta$ etc. while upper case Greek letters are written as $\Omega$ $\Delta$.
+\[E=m\]
 
-Mathematical operators are prefixed with a backslash as $\sin(\beta)$, $\cos(\alpha)$, $\log(x)$ etc.
-\end{document}
+Equation and simplified verion
+\begin{equation} \label{full-eq} \tag{full equation}
+x=2y2+z+3z+y
+\end{equation}
+Simplified
+\begin{equation} \label{sim-eq} \tag{simplified equation}
+x=5y+4z
+\end{equation}
