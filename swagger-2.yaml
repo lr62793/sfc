@@ -1,0 +1,54 @@
+openapi: 3.0.3
+info:
+  title: Minimal QA Swagger Test
+  version: 1.0.0
+
+servers:
+  - url: https://api.test.local
+
+tags:
+  - name: users
+  - name: admin
+
+paths:
+  /users:
+    get:
+      tags: [users]
+      summary: Get users
+      operationId: getUsers
+      x-operation-test: operation-extension
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+
+    post:
+      tags: [users]
+      summary: Create user
+      operationId: createUser
+      responses:
+        '201':
+          description: Created
+
+  /admin:
+    delete:
+      tags: [admin]
+      summary: Delete something
+      operationId: deleteSomething
+      responses:
+        '204':
+          description: Deleted
+
+components:
+  schemas:
+    User:
+      type: object
+      x-schema-test: schema-extension
+      properties:
+        id:
+          type: string
+        name:
+          type: string
