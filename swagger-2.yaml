@@ -11,8 +11,9 @@ tags:
   - name: admin
 
 paths:
+
   /users/add:
-      post:
+    post:
       tags: [users]
       summary: Create user
       operationId: createUser
