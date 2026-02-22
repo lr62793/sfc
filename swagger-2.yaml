@@ -17,6 +17,7 @@ paths:
       tags: [users]
       summary: Create user
       operationId: createUser
+      x-displayName: custom-name
       responses:
         '201':
           description: Created
