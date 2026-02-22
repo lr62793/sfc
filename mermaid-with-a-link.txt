@@ -1,0 +1,5 @@
+graph TD
+    A[Start] --> B[Visit Google]
+    B --> C[End]
+
+    click B "https://www.google.com" "Go to Google"
