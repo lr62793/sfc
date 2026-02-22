@@ -11,6 +11,15 @@ tags:
   - name: admin
 
 paths:
+  /users/add:
+      post:
+      tags: [users]
+      summary: Create user
+      operationId: createUser
+      responses:
+        '201':
+          description: Created
+
   /users:
     get:
       tags: [users]
@@ -24,14 +33,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-
-    post:
-      tags: [users]
-      summary: Create user
-      operationId: createUser
-      responses:
-        '201':
-          description: Created
 
   /admin:
     delete:
