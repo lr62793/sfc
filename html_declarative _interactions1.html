@@ -1,0 +1,167 @@
+<style>
+.container {
+display: flex;
+flex-direction: row;
+font-family: Apple-System, Arial, Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', STXihei, sans-serif;
+justify-content: space-around;
+padding: 1rem;
+}
+​
+.container > div {
+background: #DDDDDD;
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+padding: 2rem;
+}
+​
+.button {
+border: none;
+height: 100px;
+width: 250px;
+}
+​
+.button.v1 {
+background: #ffd000;
+border-radius: 1rem;
+box-shadow: inset 0px 0px 5px 5px #fff080, 0px 10px 0px 0px #ffd000;
+transition: 0.2s;
+color: #000;
+font-weight: bold;
+}
+​
+.button.v1:hover {
+transform: translate(0, 10px);
+box-shadow: inset 0px 0px 5px 5px #fff080, 0px 0px 0px 0px #ffd000;
+}
+​
+.button.v2 {
+border: 2px solid #EEEEEE;
+background: #666;
+color: white;
+font-weight: bold;
+}
+</style>
+​
+<div class="container">
+<div>
+<span>Button Idea number 1</span>
+<div>
+<button
+class="button v1"
+x-on="click"
+x-command="dialog.open"
+x-command-for="modalV1">
+Click me <br> (x-on="click")
+</button>
+</div>
+</div>
+<div>
+<span>Button Idea number 2</span>
+<div>
+<button
+class="button v2"
+x-on="mouseenter"
+x-command="dialog.open"
+x-command-for="modalV2">
+Hover mouse over me <br> (x-on="mouseenter")
+</button>
+</div>
+</div>
+</div>
+​
+<template id="modalV1" x-dialog>
+<style>
+.modal-container {
+background-color: #0075c2;
+padding: 30px;
+border-radius: 10px;
+max-width: 500px;
+margin: auto;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+​
+.btn-close {
+background-color: #ff4d00cc;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+​
+.btn-close:hover {
+background-color: #ff4d00fc;
+color: #fff;
+}
+​
+h1, p {
+color: #fff;
+margin-bottom: 20px;
+}
+</style>
+​
+<div class="modal-container">
+<h1>Hello from modalV1!</h1>
+<p>In your code, in the <b>template</b> section you can put any HTML + CSS elements that will be displayed here.</p>
+<button
+id="closeModalV1"
+class="btn-close"
+x-on="click"
+x-command="dialog.close"
+x-command-for="closeModalV1">
+Click to close
+</button>
+</div>
+</template>
+​
+<div id="modalV2" x-dialog style="display: none;">
+<style>
+.modal-container {
+background-color: #2e8b57;
+padding: 30px;
+border-radius: 10px;
+max-width: 500px;
+margin: auto;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+​
+h1, p {
+color: #fff;
+margin-bottom: 20px;
+}
+​
+.btn-confirm {
+background-color: #ffffff;
+color: #2e8b57;
+padding: 10px 20px;
+border: 2px solid #ffffff;
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+​
+.btn-confirm:hover {
+background-color: #246b45;
+color: #fff;
+border-color: #fff;
+}
+</style>
+​
+<div class="modal-container">
+<h1>Hello from modalV2!</h1>
+<p>This is another modal example. You can customize this layout however you like.</p>
+<button
+id="closeModalV2"
+class="btn-confirm"
+x-on="dblclick"
+x-command="dialog.close"
+x-command-for="closeModalV2">
+Double click to close
+</button>
+</div>
+</div>
