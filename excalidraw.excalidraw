@@ -211,7 +211,7 @@
     "gridSize": 20,
     "gridStep": 5,
     "gridModeEnabled": false,
-    "viewBackgroundColor": "#ffffff",
+    "viewBackgroundColor": "#fff9db",
     "lockedMultiSelections": {}
   },
   "files": {}
