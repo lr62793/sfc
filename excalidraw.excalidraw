@@ -20,23 +20,15 @@
       "opacity": 100,
       "groupIds": [],
       "frameId": null,
-      "roundness": {
-        "type": 3
-      },
+      "roundness": { "type": 3 },
       "seed": 123456,
-      "version": 2,
-      "versionNonce": 1258371372,
+      "version": 1,
+      "versionNonce": 1,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "type": "text",
-          "id": "text1"
-        }
-      ],
-      "updated": 1774438021015,
-      "link": null,
-      "locked": false,
-      "index": "a0"
+      "boundElements": [{ "type": "text", "id": "text1" }],
+      "updated": 1700000000000,
+      "link": "https://google.com",
+      "locked": false
     },
     {
       "id": "text1",
@@ -57,11 +49,11 @@
       "frameId": null,
       "roundness": null,
       "seed": 654321,
-      "version": 2,
-      "versionNonce": 1269514132,
+      "version": 1,
+      "versionNonce": 2,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1774438021015,
+      "boundElements": null,
+      "updated": 1700000000000,
       "link": null,
       "locked": false,
       "text": "Example",
@@ -71,9 +63,7 @@
       "verticalAlign": "middle",
       "containerId": "rect1",
       "originalText": "Example",
-      "lineHeight": 1.25,
-      "index": "a1",
-      "autoResize": true
+      "lineHeight": 1.25
     },
     {
       "id": "arrow1",
@@ -92,47 +82,21 @@
       "opacity": 100,
       "groupIds": [],
       "frameId": null,
-      "roundness": {
-        "type": 2
-      },
+      "roundness": { "type": 2 },
       "seed": 111111,
-      "version": 2,
-      "versionNonce": 123286444,
+      "version": 1,
+      "versionNonce": 3,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1774438021015,
+      "boundElements": null,
+      "updated": 1700000000000,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          150,
-          0
-        ]
-      ],
+      "points": [[0, 0], [150, 0]],
       "lastCommittedPoint": null,
-      "startBinding": {
-        "mode": "orbit",
-        "elementId": "rect1",
-        "fixedPoint": [
-          0.5001,
-          0.5001
-        ]
-      },
-      "endBinding": {
-        "mode": "orbit",
-        "elementId": "rect2",
-        "fixedPoint": [
-          0.5001,
-          0.5001
-        ]
-      },
+      "startBinding": { "elementId": "rect1", "focus": 0, "gap": 1 },
+      "endBinding": { "elementId": "rect2", "focus": 0, "gap": 1 },
       "startArrowhead": null,
-      "endArrowhead": "arrow",
-      "index": "a2"
+      "endArrowhead": "arrow"
     },
     {
       "id": "rect2",
@@ -151,23 +115,15 @@
       "opacity": 100,
       "groupIds": [],
       "frameId": null,
-      "roundness": {
-        "type": 3
-      },
+      "roundness": { "type": 3 },
       "seed": 789012,
-      "version": 2,
-      "versionNonce": 482749716,
+      "version": 1,
+      "versionNonce": 4,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "type": "text",
-          "id": "text2"
-        }
-      ],
-      "updated": 1774438021015,
+      "boundElements": [{ "type": "text", "id": "text2" }],
+      "updated": 1700000000000,
       "link": null,
-      "locked": false,
-      "index": "a3"
+      "locked": false
     },
     {
       "id": "text2",
@@ -188,11 +144,11 @@
       "frameId": null,
       "roundness": null,
       "seed": 222222,
-      "version": 2,
-      "versionNonce": 466476588,
+      "version": 1,
+      "versionNonce": 5,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1774438021015,
+      "boundElements": null,
+      "updated": 1700000000000,
       "link": null,
       "locked": false,
       "text": "Result",
@@ -202,17 +158,12 @@
       "verticalAlign": "middle",
       "containerId": "rect2",
       "originalText": "Result",
-      "lineHeight": 1.25,
-      "index": "a4",
-      "autoResize": true
+      "lineHeight": 1.25
     }
   ],
   "appState": {
-    "gridSize": 20,
-    "gridStep": 5,
-    "gridModeEnabled": false,
-    "viewBackgroundColor": "#fff9db",
-    "lockedMultiSelections": {}
+    "gridSize": null,
+    "viewBackgroundColor": "#fff9db"
   },
   "files": {}
 }
